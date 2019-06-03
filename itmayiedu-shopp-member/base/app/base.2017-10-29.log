@@ -1,0 +1,888 @@
+2017-10-29 17:31:10.107 [main] INFO  com.itmayiedu.MemberServer - No active profile set, falling back to default profiles: default
+2017-10-29 17:31:16.744 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-29 17:31:16.745 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-29 17:31:17.006 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-29 17:31:25.318 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-10-29 17:31:25.319 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-29 17:31:25.333 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-10-29 17:31:25.333 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-29 17:31:26.925 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2017-10-29 17:31:27.334 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-10-29 17:31:27.334 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-10-29 17:31:27.640 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-10-29 17:31:27.640 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-10-29 17:31:28.470 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:31:28.799 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2017-10-29 17:31:28.800 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-10-29 17:31:28.800 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2017-10-29 17:31:28.800 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2017-10-29 17:31:28.800 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-10-29 17:31:28.801 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2017-10-29 17:31:28.801 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-10-29 17:31:29.194 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2017-10-29 17:31:29.197 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2017-10-29 17:31:29.203 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-10-29 17:31:29.207 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1509269489207 with initial instances count: 2
+2017-10-29 17:31:29.278 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1509269489278, current=UP, previous=STARTING]
+2017-10-29 17:31:29.295 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MEMBER/192.168.1.3:member:8762: registering service...
+2017-10-29 17:31:29.394 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MEMBER/192.168.1.3:member:8762 - registration status: 204
+2017-10-29 17:31:29.462 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8762"]
+2017-10-29 17:31:29.499 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8762"]
+2017-10-29 17:31:29.521 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-29 17:31:29.594 [main] INFO  com.itmayiedu.MemberServer - Started MemberServer in 29.926 seconds (JVM running for 31.947)
+2017-10-29 17:33:14.457 [http-nio-8762-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-29 17:33:14.673 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:33:14.673 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/login
+2017-10-29 17:33:14.673 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:33:14.676 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.login(UserEntity)
+2017-10-29 17:33:14.677 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[com.itmayiedu.entity.UserEntity@3642c01a]
+2017-10-29 17:33:14.677 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:33:14.905 [http-nio-8762-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-29 17:33:17.812 [http-nio-8762-exec-3] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:169)
+	at com.itmayiedu.common.redis.BaseRedisService.set(BaseRedisService.java:34)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.setLoginToken(UserServiceManageImpl.java:134)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.login(UserServiceManageImpl.java:93)
+	at com.itmayiedu.api.service.impl.UserServiceImpl.login(UserServiceImpl.java:46)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$e6faf83d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$1b96cc4a.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-29 17:36:28.812 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:41:28.821 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:42:23.015 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:42:23.015 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/findOpenId
+2017-10-29 17:42:23.015 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:42:23.015 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.findLogin(String)
+2017-10-29 17:42:23.015 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[0C4D91D8B0F80BF0C3E9D295DCA362B7]
+2017-10-29 17:42:23.016 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:42:23.054 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:42:23.065 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"沒有关联到用户","code":500}
+2017-10-29 17:42:23.066 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:42:38.603 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:42:38.604 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/login
+2017-10-29 17:42:38.604 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:42:38.604 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.login(UserEntity)
+2017-10-29 17:42:38.604 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[com.itmayiedu.entity.UserEntity@7eb0515f]
+2017-10-29 17:42:38.605 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:42:40.616 [http-nio-8762-exec-5] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:169)
+	at com.itmayiedu.common.redis.BaseRedisService.set(BaseRedisService.java:34)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.setLoginToken(UserServiceManageImpl.java:134)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.login(UserServiceManageImpl.java:93)
+	at com.itmayiedu.api.service.impl.UserServiceImpl.login(UserServiceImpl.java:46)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$e6faf83d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$1b96cc4a.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-29 17:43:16.332 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:43:16.334 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/findOpenId
+2017-10-29 17:43:16.334 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:43:16.334 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.findLogin(String)
+2017-10-29 17:43:16.334 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[0C4D91D8B0F80BF0C3E9D295DCA362B7]
+2017-10-29 17:43:16.334 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:43:16.337 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:43:16.337 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"沒有关联到用户","code":500}
+2017-10-29 17:43:16.337 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:43:25.942 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:43:25.942 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/login
+2017-10-29 17:43:25.942 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:43:25.943 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.login(UserEntity)
+2017-10-29 17:43:25.944 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[com.itmayiedu.entity.UserEntity@3274c8b9]
+2017-10-29 17:43:25.945 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:43:26.958 [http-nio-8762-exec-8] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:169)
+	at com.itmayiedu.common.redis.BaseRedisService.set(BaseRedisService.java:34)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.setLoginToken(UserServiceManageImpl.java:134)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.login(UserServiceManageImpl.java:93)
+	at com.itmayiedu.api.service.impl.UserServiceImpl.login(UserServiceImpl.java:46)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$e6faf83d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$1b96cc4a.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-29 17:45:06.457 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:45:06.457 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/findOpenId
+2017-10-29 17:45:06.457 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:45:06.458 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.findLogin(String)
+2017-10-29 17:45:06.458 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[0C4D91D8B0F80BF0C3E9D295DCA362B7]
+2017-10-29 17:45:06.458 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:45:06.464 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:45:06.464 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"沒有关联到用户","code":500}
+2017-10-29 17:45:06.464 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:45:14.402 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:45:14.403 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/login
+2017-10-29 17:45:14.403 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:45:14.403 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.login(UserEntity)
+2017-10-29 17:45:14.403 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[com.itmayiedu.entity.UserEntity@57d8f30f]
+2017-10-29 17:45:14.403 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:45:14.709 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:45:14.709 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":"f73d564c-92e2-4f04-ac26-a5a1ac2dbf34"}
+2017-10-29 17:45:14.709 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:46:28.831 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:48:33.989 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:48:33.990 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 17:48:33.991 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:48:33.991 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 17:48:33.991 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[f73d564c-92e2-4f04-ac26-a5a1ac2dbf34]
+2017-10-29 17:48:33.991 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:48:34.015 [http-nio-8762-exec-7] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "null"] with root cause
+java.lang.NumberFormatException: For input string: "null"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Long.parseLong(Unknown Source)
+	at java.lang.Long.parseLong(Unknown Source)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.getUser(UserServiceManageImpl.java:113)
+	at com.itmayiedu.api.service.impl.UserServiceImpl.getUser(UserServiceImpl.java:54)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$e6faf83d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$1b96cc4a.getUser(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-29 17:49:35.288 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:49:35.288 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 17:49:35.288 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:49:35.288 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 17:49:35.289 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[f73d564c-92e2-4f04-ac26-a5a1ac2dbf34]
+2017-10-29 17:49:35.289 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:49:35.293 [http-nio-8762-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "null"] with root cause
+java.lang.NumberFormatException: For input string: "null"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Long.parseLong(Unknown Source)
+	at java.lang.Long.parseLong(Unknown Source)
+	at com.itmayiedu.manage.impl.UserServiceManageImpl.getUser(UserServiceManageImpl.java:113)
+	at com.itmayiedu.api.service.impl.UserServiceImpl.getUser(UserServiceImpl.java:54)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$e6faf83d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.itmayiedu.api.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$1b96cc4a.getUser(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-29 17:50:03.980 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:50:03.980 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 17:50:03.980 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:50:03.981 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 17:50:03.982 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[f73d564c-92e2-4f04-ac26-a5a1ac2dbf34]
+2017-10-29 17:50:03.982 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:51:28.841 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:52:34.295 [main] INFO  com.itmayiedu.MemberServer - No active profile set, falling back to default profiles: default
+2017-10-29 17:52:57.864 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-29 17:52:57.867 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-29 17:52:58.309 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-29 17:53:08.369 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-10-29 17:53:08.370 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-29 17:53:08.386 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-10-29 17:53:08.397 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-29 17:53:09.931 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2017-10-29 17:53:10.316 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-10-29 17:53:10.317 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-10-29 17:53:10.641 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-10-29 17:53:10.641 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-10-29 17:53:11.392 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:53:11.640 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2017-10-29 17:53:11.640 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-10-29 17:53:11.640 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2017-10-29 17:53:11.640 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2017-10-29 17:53:11.640 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-10-29 17:53:11.642 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2017-10-29 17:53:11.642 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-10-29 17:53:12.083 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2017-10-29 17:53:12.086 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2017-10-29 17:53:12.092 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-10-29 17:53:12.097 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1509270792096 with initial instances count: 3
+2017-10-29 17:53:12.179 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1509270792179, current=UP, previous=STARTING]
+2017-10-29 17:53:12.186 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MEMBER/192.168.1.3:member:8762: registering service...
+2017-10-29 17:53:12.273 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MEMBER/192.168.1.3:member:8762 - registration status: 204
+2017-10-29 17:53:12.373 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8762"]
+2017-10-29 17:53:12.424 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8762"]
+2017-10-29 17:53:12.447 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-29 17:53:12.514 [main] INFO  com.itmayiedu.MemberServer - Started MemberServer in 50.751 seconds (JVM running for 53.393)
+2017-10-29 17:54:40.427 [http-nio-8762-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-29 17:54:40.565 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:54:40.565 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/findOpenId
+2017-10-29 17:54:40.565 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:54:40.569 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.findLogin(String)
+2017-10-29 17:54:40.569 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[0C4D91D8B0F80BF0C3E9D295DCA362B7]
+2017-10-29 17:54:40.569 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:54:40.722 [http-nio-8762-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-29 17:54:41.510 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:54:41.518 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":"d6133803-5a61-49f1-b223-64dc31649341"}
+2017-10-29 17:54:41.518 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:55:16.804 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:55:16.804 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 17:55:16.804 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:55:16.804 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 17:55:16.804 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[d6133803-5a61-49f1-b223-64dc31649341]
+2017-10-29 17:55:16.804 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:55:16.827 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:55:16.872 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 17:55:16.872 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 17:58:11.655 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 17:59:49.561 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 17:59:49.561 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 17:59:49.561 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 17:59:49.562 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 17:59:49.562 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[d6133803-5a61-49f1-b223-64dc31649341]
+2017-10-29 17:59:49.562 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:00:31.369 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:00:31.369 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 18:00:31.369 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 18:00:31.369 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 18:00:31.369 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[d6133803-5a61-49f1-b223-64dc31649341]
+2017-10-29 18:00:31.370 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:00:31.396 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:00:31.396 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 18:00:31.396 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:01:03.633 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:01:03.634 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 18:01:03.634 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 18:01:03.634 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 18:01:03.634 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[d6133803-5a61-49f1-b223-64dc31649341]
+2017-10-29 18:01:03.634 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:01:03.642 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:01:03.643 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 18:01:03.643 [http-nio-8762-exec-10] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:02:05.969 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:02:05.970 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 18:02:05.971 [http-nio-8762-exec-7] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:03:11.664 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:03:42.215 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:03:42.216 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 18:03:42.216 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 18:03:42.216 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 18:03:42.216 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[d6133803-5a61-49f1-b223-64dc31649341]
+2017-10-29 18:03:42.216 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:03:42.220 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:03:42.220 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 18:03:42.220 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:04:55.248 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:04:55.248 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/findOpenId
+2017-10-29 18:04:55.248 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 18:04:55.248 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.findLogin(String)
+2017-10-29 18:04:55.248 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[0C4D91D8B0F80BF0C3E9D295DCA362B7]
+2017-10-29 18:04:55.248 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:04:55.255 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:04:55.255 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":"dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4"}
+2017-10-29 18:04:55.256 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:06:05.407 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:06:05.408 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 18:06:05.408 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 18:06:05.408 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 18:06:05.409 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 18:06:05.409 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:06:05.417 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:06:05.418 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 18:06:05.418 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:06:20.732 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:06:20.732 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 18:06:20.732 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 18:06:20.733 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 18:06:20.733 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 18:06:20.733 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 18:06:20.747 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:06:20.747 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 18:06:20.748 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 18:08:11.674 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:13:11.683 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:18:11.692 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:23:11.705 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:28:11.716 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:33:11.725 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:38:11.745 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:43:11.758 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:48:11.767 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:53:11.776 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 18:58:11.787 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:03:11.805 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:08:11.815 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:13:11.824 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:18:11.833 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:23:11.843 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:23:43.198 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:23:43.198 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:23:43.198 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:23:43.198 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:23:43.198 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:23:43.199 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:23:43.231 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:23:43.231 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:23:43.231 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:24:18.834 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:24:18.835 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:24:18.835 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:24:18.835 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:24:18.835 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:24:18.835 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:24:18.841 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:24:18.841 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:24:18.841 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:25:59.526 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:25:59.527 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:25:59.527 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:25:59.527 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:25:59.527 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:25:59.527 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:25:59.531 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:25:59.531 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:25:59.531 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:27:03.765 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:27:03.766 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:27:03.766 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:27:03.766 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:27:03.766 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:27:03.766 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:27:03.771 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:27:03.772 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:27:03.772 [http-nio-8762-exec-3] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:27:15.793 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:27:15.793 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:27:15.793 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:27:15.793 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:27:15.793 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:27:15.793 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:27:15.815 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:27:15.816 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:27:15.816 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:27:54.527 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:27:54.527 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:27:54.527 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:27:54.527 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:27:54.527 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:27:54.527 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:27:54.542 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:27:54.542 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:27:54.542 [http-nio-8762-exec-6] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:28:11.859 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:28:24.466 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:28:24.466 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 19:28:24.466 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 19:28:24.466 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 19:28:24.481 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[dbd72a6d-855c-4ebe-97c8-4078c6fc7bc4]
+2017-10-29 19:28:24.481 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 19:28:24.496 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:28:24.497 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 19:28:24.497 [http-nio-8762-exec-8] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 19:33:11.877 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:38:11.887 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:43:11.896 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:48:11.905 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 19:53:11.914 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 23:42:55.462 [main] INFO  com.itmayiedu.MemberServer - No active profile set, falling back to default profiles: default
+2017-10-29 23:43:01.719 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-10-29 23:43:01.721 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-10-29 23:43:02.346 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-10-29 23:43:10.519 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-10-29 23:43:10.519 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-29 23:43:10.542 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2017-10-29 23:43:10.542 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-10-29 23:43:11.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2017-10-29 23:43:12.165 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2017-10-29 23:43:12.165 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2017-10-29 23:43:12.535 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2017-10-29 23:43:12.536 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2017-10-29 23:43:13.379 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 23:43:13.763 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2017-10-29 23:43:13.763 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2017-10-29 23:43:13.763 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2017-10-29 23:43:13.763 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2017-10-29 23:43:13.763 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2017-10-29 23:43:13.763 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2017-10-29 23:43:13.764 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2017-10-29 23:43:14.300 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2017-10-29 23:43:14.304 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2017-10-29 23:43:14.308 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-10-29 23:43:14.313 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1509291794312 with initial instances count: 3
+2017-10-29 23:43:14.383 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1509291794383, current=UP, previous=STARTING]
+2017-10-29 23:43:14.412 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MEMBER/192.168.1.3:member:8762: registering service...
+2017-10-29 23:43:14.544 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MEMBER/192.168.1.3:member:8762 - registration status: 204
+2017-10-29 23:43:14.568 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8762"]
+2017-10-29 23:43:14.603 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8762"]
+2017-10-29 23:43:14.641 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-10-29 23:43:14.722 [main] INFO  com.itmayiedu.MemberServer - Started MemberServer in 23.281 seconds (JVM running for 24.84)
+2017-10-29 23:43:42.607 [http-nio-8762-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-29 23:43:42.845 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:43:42.845 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/findOpenId
+2017-10-29 23:43:42.845 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 23:43:42.847 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.findLogin(String)
+2017-10-29 23:43:42.848 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[0C4D91D8B0F80BF0C3E9D295DCA362B7]
+2017-10-29 23:43:42.848 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:43:43.025 [http-nio-8762-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-10-29 23:43:43.679 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:43:43.691 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":"ffe32114-8165-4c09-8db8-87e13c825cca"}
+2017-10-29 23:43:43.692 [http-nio-8762-exec-1] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:44:00.517 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:44:00.517 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 23:44:00.517 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 23:44:00.518 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 23:44:00.518 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[ffe32114-8165-4c09-8db8-87e13c825cca]
+2017-10-29 23:44:00.518 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:44:00.530 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:44:00.573 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 23:44:00.574 [http-nio-8762-exec-5] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:44:17.283 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:44:17.283 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 23:44:17.283 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 23:44:17.283 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 23:44:17.283 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[ffe32114-8165-4c09-8db8-87e13c825cca]
+2017-10-29 23:44:17.284 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:44:17.289 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:44:17.291 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 23:44:17.291 [http-nio-8762-exec-2] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:44:22.690 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:44:22.690 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求地址:http://192.168.1.3:8762/member/getUser
+2017-10-29 23:44:22.690 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求方式:POST
+2017-10-29 23:44:22.691 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法:Map com.itmayiedu.api.service.impl.UserServiceImpl.getUser(String)
+2017-10-29 23:44:22.691 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - 请求类方法参数:[ffe32114-8165-4c09-8db8-87e13c825cca]
+2017-10-29 23:44:22.691 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - ===============请求内容===============
+2017-10-29 23:44:22.694 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:44:22.694 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - Response内容:{"msg":"success","code":200,"data":{"created":1509118464000,"email":"644065@qq.com","id":37,"phone":"1592251511","updated":1509270314000,"userName":"zhangsan"}}
+2017-10-29 23:44:22.694 [http-nio-8762-exec-9] INFO  com.itmayiedu.common.log.LogAspectServiceApi - --------------返回内容----------------
+2017-10-29 23:48:13.775 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 23:53:13.785 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2017-10-29 23:58:13.794 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

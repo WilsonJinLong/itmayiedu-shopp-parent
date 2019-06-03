@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="imayiedu-shopp-member-api" />
+        <module name="imayiedu-shopp-pay" />
+        <module name="imayiedu-shopp-pay-api" />
+        <module name="imayiedu-shopp-pay-web" />
+        <module name="itmayiedu-shopp-commodity" />
+        <module name="itmayiedu-shopp-commodity-api" />
+        <module name="itmayiedu-shopp-common" />
+        <module name="itmayiedu-shopp-eurekaserver" />
+        <module name="itmayiedu-shopp-member" />
+        <module name="itmayiedu-shopp-messages" />
+        <module name="itmayiedu-shopp-mobile-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="imayiedu-shopp-member-api" target="1.8" />
+      <module name="imayiedu-shopp-pay" target="1.8" />
+      <module name="imayiedu-shopp-pay-api" target="1.8" />
+      <module name="imayiedu-shopp-pay-web" target="1.8" />
+      <module name="itmayiedu-shopp-api" target="1.8" />
+      <module name="itmayiedu-shopp-commodity" target="1.8" />
+      <module name="itmayiedu-shopp-commodity-api" target="1.8" />
+      <module name="itmayiedu-shopp-common" target="1.8" />
+      <module name="itmayiedu-shopp-eurekaserver" target="1.8" />
+      <module name="itmayiedu-shopp-member" target="1.8" />
+      <module name="itmayiedu-shopp-messages" target="1.8" />
+      <module name="itmayiedu-shopp-mobile-web" target="1.8" />
+      <module name="itmayiedu-shopp-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
